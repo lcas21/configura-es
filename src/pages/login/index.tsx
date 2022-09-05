@@ -9,15 +9,15 @@ export const Login = () => {
         <aside className="flex justify-center items-center">
           <img src="faspm.svg" alt="" />
         </aside>
-        <main className=" flex flex-col justify-center items-center gap-16 px-6">
+        <main className=" flex flex-col justify-center items-center gap-10 px-6">
           <div className="flex flex-col items-center gap-1">
-            <h1 className="font-bold text-3xl">FASPM</h1>
+            <h1 className="font-bold text-3xl mb-1">FASPM</h1>
             <h2>Fundo de Assistencia social da Polícia Militar do Pará</h2>
           </div>
 
-          <form className="flex flex-col w-full px-6 gap-4">
-            <InputText label="Email" type="email" />
-            <InputText label="Senha" type="password" />
+          <form className="flex flex-col w-full px-6 gap-4 max-w-md" >
+            <InputText label="Email" type="email" placeholder="Email"/>
+            <InputText label="Senha" type="password" placeholder="Senha"/>
             <Button> Login</Button>
           </form>
           <Link href='/register'>Criar Conta</Link>
