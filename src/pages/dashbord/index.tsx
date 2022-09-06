@@ -1,10 +1,8 @@
- export const Dashboard = () => {
-    return (
-        <div>
-            dashboard
+import React from 'react'
+import { TamplateContainer } from '../../components/template'
 
-        </div>
-
-    )
-
- }
+export const Dashboard = () => {
+  return (
+    <TamplateContainer><div>sdsdsdd</div></TamplateContainer>
+  )
+}

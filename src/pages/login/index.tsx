@@ -1,28 +1,32 @@
 import Link from "next/link";
 import { Button } from "../../components/atoms/Button";
 import { InputText } from "../../components/moleculas/inputText";
+import { Aside } from "../../components/organism/aside";
+import { HeroMain } from "../../components/organism/main";
+import {
+  TamplateCont,
+  TamplateContainer,
+  TamplateMain,
+} from "../../components/template";
 
 export const Login = () => {
   return (
-    <div className="w-sreen h-screen bg-gray-50 flex justify-center">
-      <div className="w-full h-full max-w-screen-xl grid grid-cols-2">
-        <aside className="flex justify-center items-center">
-          <img src="faspm.svg" alt="" />
-        </aside>
-        <main className=" flex flex-col justify-center items-center gap-10 px-6">
-          <div className="flex flex-col items-center gap-1">
-            <h1 className="font-bold text-3xl mb-1">FASPM</h1>
-            <h2>Fundo de Assistencia social da Polícia Militar do Pará</h2>
-          </div>
-
-          <form className="flex flex-col w-full px-6 gap-4 max-w-md" >
-            <InputText label="Email" type="email" placeholder="Email"/>
-            <InputText label="Senha" type="password" placeholder="Senha"/>
+    <TamplateContainer>
+      <TamplateCont>
+        <Aside />
+        <TamplateMain>
+          <HeroMain
+            h1="FASPM"
+            h2="Fundo de Assistencia social da Polícia Militar do Pará"
+          />
+          <form className="flex flex-col w-full px-6 gap-4 max-w-md">
+            <InputText label="Email" type="email" placeholder="Email" />
+            <InputText label="Senha" type="password" placeholder="Senha" />
             <Button> Login</Button>
           </form>
-          <Link href='/register'>Criar Conta</Link>
-        </main>
-      </div>
-    </div>
+          <Link href="/register">Criar Conta</Link>
+        </TamplateMain>
+      </TamplateCont>
+    </TamplateContainer>
   );
 };

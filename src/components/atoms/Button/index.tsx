@@ -1,10 +1,10 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
 
 interface props extends ButtonHTMLAttributes<HTMLButtonElement> {
-    children: ReactNode
+  children: ReactNode;
 }
 
-export const Button = ({children, ...props}: props) => {
+export const Button = ({ children, ...props }: props) => {
   return (
     <button
       {...props}
