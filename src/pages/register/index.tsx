@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { Button } from "../components/atoms/Button";
-import { InputText } from "../components/moleculas/inputText";
-import { Aside } from "../components/organism/aside";
-import { HeroMain } from "../components/organism/main";
-import { TamplateCont, TamplateContainer, TamplateMain } from "../components/template";
+import { Button } from "../../components/atoms/Button";
+import { InputText } from "../../components/moleculas/inputText";
+import { Aside } from "../../components/organism/aside";
+import { HeroMain } from "../../components/organism/main";
+import { TamplateCont, TamplateContainer, TamplateMain } from "../../components/template";
 
 
 export const Register = () => {

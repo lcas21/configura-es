@@ -1,5 +1,5 @@
 import React from 'react'
-import { Register } from '../../src/register'
+import { Register } from '../../src/pages/register'
 
 export const index = () => {
   return (
